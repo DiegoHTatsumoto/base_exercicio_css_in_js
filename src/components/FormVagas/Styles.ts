@@ -1,24 +1,21 @@
-.form {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  background-color: var(--cor-secundaria);
-  padding: 32px;
-  border-radius: 12px;
-  margin-top: 40px;
-}
+import styled from 'styled-components'
 
-.btnPesquisar {
+export const StyledForm = styled.form`
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+`
+
+export const BtnPesquisar = styled.button`
   background-color: var(--cor-principal);
-  border: 1px solid var(--cor-principal);
-  height: 40px;
-  padding: 0 16px;
-  font-size: 18px;
-  color: var(--cor-secundaria);
-  margin-left: 8px;
+  border: none;
+  padding: 10px 16px;
+  font-size: 16px;
+  color: white;
   cursor: pointer;
-}
+  border-radius: 4px;
 
-.campo {
-  padding: 0 16px;
-  outline-color: var(--cor-principal);
-}
+  &:hover {
+    background-color: darkblue;
+  }
+`
