@@ -1,13 +1,15 @@
 import React from 'react'
-import { Form, HeroTitle } from './Styles'
+import { Form, FormContent, HeroTitle } from './Styles'
 
 const Hero = () => (
   <Form>
-    <div className="container">
-      <HeroTitle>
-        As melhores vagas para tecnologia, design e artes visuais.
-      </HeroTitle>
-    </div>
+    <FormContent>
+      <div className="container">
+        <HeroTitle>
+          As melhores vagas para tecnologia, design e artes visuais.
+        </HeroTitle>
+      </div>
+    </FormContent>
   </Form>
 )
 

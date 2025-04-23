@@ -1,12 +1,5 @@
 import React, { useState, FormEvent } from 'react'
-import { StyledForm, BtnPesquisar } from './Styles'
-import styled from 'styled-components'
-
-const Input = styled.input`
-  padding: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-`
+import { StyledForm, BtnPesquisar, Input, FormWrapper } from './Styles'
 
 interface Props {
   aoPesquisar: (termo: string) => void
@@ -21,14 +14,18 @@ const FormVagas = ({ aoPesquisar }: Props) => {
   }
 
   return (
-    <StyledForm onSubmit={aoEnviarForm}>
-      <Input
-        placeholder="Front-end, fullstack, node, design"
-        onChange={(e) => setTermo(e.target.value)}
-        type="search"
-      />
-      <BtnPesquisar type="submit">Pesquisar</BtnPesquisar>
-    </StyledForm>
+    <FormWrapper>
+      <div className="container">
+        <StyledForm onSubmit={aoEnviarForm}>
+          <Input
+            placeholder="Front-end, fullstack, node, design"
+            onChange={(e) => setTermo(e.target.value)}
+            type="search"
+          />
+          <BtnPesquisar type="submit">Pesquisar</BtnPesquisar>
+        </StyledForm>
+      </div>
+    </FormWrapper>
   )
 }
 

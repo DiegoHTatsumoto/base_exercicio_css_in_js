@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Vaga = styled.div`
+export const Vaga = styled.li`
   border: 1px solid var(--cor-principal);
   background-color: var(--cor-secundaria);
   color: var(--cor-principal);
@@ -20,7 +20,7 @@ export const Vaga = styled.div`
   }
 `
 
-export const VagaTitulo = styled.h2`
+export const VagaTitulo = styled.h3`
   font-weight: bold;
   margin-bottom: 16px;
 `
@@ -42,3 +42,4 @@ export const VagaLink = styled.a`
     display: block;
   }
 `
+
